@@ -28,7 +28,7 @@ export default function Home() {
   };
 
   return (
-    <section className="max-lg: mx-5 mt-2 grid grid-cols-[1.7fr,1fr] grid-rows-[395px,200px] gap-3 max-lg:mt-5 max-lg:flex max-lg:flex-col max-lg:gap-5">
+    <section className="mx-10 mt-2 grid grid-cols-[1.7fr,1fr] grid-rows-[395px,200px] gap-3 max-lg:mx-5 max-lg:mt-7 max-lg:flex max-lg:flex-col max-lg:gap-5">
       <div className="row-span-2 max-lg:h-[340px]">
         <Image
           src={gantsAccueil}
@@ -36,6 +36,7 @@ export default function Home() {
           className="h-full w-full cursor-pointer rounded-[20px] object-fill"
           data-aos="zoom-in"
           onClick={scrollToTop}
+          priority
         />
       </div>
 
@@ -46,7 +47,7 @@ export default function Home() {
           className="h-full w-full cursor-pointer rounded-[20px] object-fill"
           data-aos="zoom-in"
           onClick={scrollToTop}
-          
+          priority
         />
       </div>
 
@@ -57,6 +58,7 @@ export default function Home() {
           className="w-full cursor-pointer rounded-[20px] object-fill max-md:h-[200px] md:h-[500px] lg:h-full"
           data-aos="zoom-in"
           onClick={scrollToTop}
+          priority
         />
       </div>
     </section>
